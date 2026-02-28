@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support My Graduation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="support-header">
+            <h1>Support My Graduation 🙏</h1>
+
+            <p>
+                Hello! I’m <strong>Prince Carlo</strong>, a soon-to-be graduate of
+                <a href="https://en.wikipedia.org/wiki/Mindanao_Polytechnic_College" target="_blank">
+                    Mindanao Polytechnic College</a>, studying
+                <strong>Bachelor of Science in Information Technology</strong>.
+            </p>
+
+            <p>
+                Graduation comes with fees like the yearbook, diploma, and graduation project. Completing my degree
+                takes dedication and support from people like you.
+            </p>
+
+            <p>
+                If you decide to contribute, you will help me celebrate this milestone and move closer to graduating.
+                Every donation, big or small, makes a real difference.
+            </p>
+
+            <p>
+                I can also offer a small task or project in return for your support. This could be something simple like
+                helping with data entry, design, or another small contribution you might find useful.
+            </p>
+
+            <div class="fund-progress">
+                <strong>Graduation Fund Progress:</strong><br>
+                Currently, I have <strong>1 supporter</strong>, but every contribution will help bring us closer to
+                covering the graduation fees.
+            </div>
+        </header>
+
+        <section class="fees">
+            <h2>Graduation Expenses</h2>
+            <label for="currency">Display fees in:</label>
+            <select id="currency">
+                <option value="PHP" selected>🇵🇭 PHP</option>
+                <option value="USD">🇺🇸 USD</option>
+                <option value="EUR">🇪🇺 EUR</option>
+                <option value="JPY">🇯🇵 JPY</option>
+                <option value="GBP">🇬🇧 GBP</option>
+                <option value="AUD">🇦🇺 AUD</option>
+                <option value="SGD">🇸🇬 SGD</option>
+            </select>
+
+            <table id="feesTable">
+                <tr>
+                    <td>Alumni Fee</td>
+                    <td data-php="250" data-paid="250">₱250</td>
+                </tr>
+                <tr>
+                    <td>Diploma/Certificate</td>
+                    <td data-php="350" data-paid="0">₱350</td>
+                </tr>
+                <tr>
+                    <td>Diploma/Certificate Holder</td>
+                    <td data-php="250" data-paid="0">₱250</td>
+                </tr>
+                <tr>
+                    <td>Graduation Fee</td>
+                    <td data-php="1500" data-paid="0">₱1,500</td>
+                </tr>
+                <tr>
+                    <td>Graduation Project</td>
+                    <td data-php="500" data-paid="0">₱500</td>
+                </tr>
+                <tr>
+                    <td>Yearbook</td>
+                    <td data-php="5500" data-paid="0">₱5,500</td>
+                </tr>
+                <tr>
+                    <td><strong>Total Collected</strong></td>
+                    <td id="totalFee" data-php="8350">₱0</td>
+                </tr>
+            </table>
+        </section>
+        <!-- Official Letter Section -->
+        <section class="letter">
+            <h2>Official Sponsorship Letter</h2>
+            <p>This is the official letter from Polychrome Salamisim, the yearbook publication of Mindanao Polytechnic
+                College.</p>
+            <img src="Letter.jpg" alt="Official Sponsorship Letter">
+            <a href="Letter.jpg" download class="download-btn">Download Letter</a>
+            <a onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLScLPbtlc2p8LQSC7cy72VLwQKYdlClaCN0H3jI-FKdoVKSPIw/viewform?usp=header', '_blank')"
+                class="download-btn">Google Form</a>
+        </section>
+
+        <h2>Support Options</h2>
+        <!-- Wallet Section -->
+        <section class="wallets">
+
+
+            <!-- Pepecoin -->
+            <div class="wallet-item">
+                <div class="wallet-header">
+                    <img src="assets/pepecoin-logo.png" alt="Pepecoin Logo">
+                    <h3>Pepecoin</h3>
+                </div>
+                <div class="wallet-info">
+                    <div class="wallet" id="pepecoin">Pq3uqrpWZqAJhaDn6G23MXC4U5UmEWpdq5</div>
+                    <button onclick="copyWallet('pepecoin')">Copy</button>
+                </div>
+                <div class="wallet-extra"></div>
+                <img class="qr" src="assets/pepecoin-qr.jpg" alt="Pepecoin QR">
+            </div>
+
+            <!-- Stellar -->
+            <div class="wallet-item">
+                <div class="wallet-header">
+                    <img src="assets/stellar-logo.png" alt="Stellar Logo">
+                    <h3>Stellar</h3>
+                </div>
+                <div class="wallet-info">
+                    <div class="wallet" id="stellar">GBKBP4XABDDSCDN3F2F4CX7O5VQUVFQPBL6X27IFXBIAVDHUXWAR2U6X</div>
+                    <button onclick="copyWallet('stellar')">Copy</button>
+                </div>
+                <div class="wallet-extra"><small>No memo required</small></div>
+                <img class="qr" src="assets/stellar-qr.jpg" alt="Stellar QR">
+            </div>
+
+            <!-- Solana -->
+            <div class="wallet-item">
+                <div class="wallet-header">
+                    <img src="assets/solana-logo.png" alt="Solana Logo">
+                    <h3>Solana</h3>
+                </div>
+                <div class="wallet-info">
+                    <div class="wallet" id="solana">3UsWAcWyy97XTJNyzFTUMUHZMrxJTXzFV67utymaM59d</div>
+                    <button onclick="copyWallet('solana')">Copy</button>
+                </div>
+                <div class="wallet-extra"></div>
+                <img class="qr" src="assets/solana-qr.jpg" alt="Solana QR">
+            </div>
+
+            <!-- BNB -->
+            <div class="wallet-item">
+                <div class="wallet-header">
+                    <img src="assets/bnb-logo.png" alt="BNB Logo">
+                    <h3>BNB</h3>
+                </div>
+                <div class="wallet-info">
+                    <div class="wallet" id="bnb">0x26766Fe0d0049035e9ade42a3d1EEa457ED5f8fD</div>
+                    <button onclick="copyWallet('bnb')">Copy</button>
+                </div>
+                <div class="wallet-extra"></div>
+                <img class="qr" src="assets/bnb-qr.jpg" alt="BNB QR">
+            </div>
+
+            <div class="wallet-item">
+                <div class="wallet-header">
+                    <img src="assets/usdt.png" alt="USDT Logo">
+                    <h3>USDT</h3>
+                </div>
+
+                <label>Select Network:</label>
+                <select id="usdtNetwork" onchange="showUSDT()">
+                    <option value="">-- Choose Network --</option>
+                    <option value="bep20">BEP-20 (BNB Smart Chain)</option>
+                    <option value="trc20">TRC-20 (Tron)</option>
+                    <option value="solana">Solana (SPL)</option>
+                    <option value="matic">Polygon (MATIC)</option>
+                    <option value="avax">Avalanche (C-Chain)</option>
+                </select>
+
+                <div id="usdtDisplay"></div>
+            </div>
+
+
+        </section>
+
+        
+        <section class="thank-section">
+            <div class="thank" id="thank">
+                Thank you for your support! Your contribution is greatly appreciated.
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <p>© 2026 Prince Carlo Monacillo. All rights reserved.</p>
+        <p>
+            Mindanao Polytechnic College |
+            Bachelor of Science in Information Technology
+        </p>
+        <p>
+            For inquiries: itsmetheit@gmail.com
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+
+</html>
