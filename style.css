@@ -4,7 +4,8 @@
     box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
     overflow-x: hidden;
 }
 
@@ -24,7 +25,7 @@ body {
     background: #fff;
     padding: 30px 20px;
     border-radius: 15px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
 }
 
 /* Header */
@@ -102,7 +103,7 @@ table td {
 
 .wallet-item:hover {
     transform: translateY(-3px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
 }
 
 .wallet-header {
@@ -178,7 +179,7 @@ table td {
     height: auto;
     border-radius: 10px;
     margin-bottom: 15px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .download-btn {
@@ -214,6 +215,7 @@ button {
     header h1 {
         font-size: 1.8rem;
     }
+
     table td {
         font-size: 0.9rem;
         padding: 10px 12px;
@@ -236,7 +238,8 @@ button {
         align-items: stretch;
     }
 
-    .wallet-info .wallet, .wallet-info button {
+    .wallet-info .wallet,
+    .wallet-info button {
         width: 100%;
         text-align: center;
     }
@@ -302,16 +305,17 @@ button {
 
 .support-header {
     text-align: center;
-    background: #f3f4f6; /* subtle light background */
+    background: #f3f4f6;
+    /* subtle light background */
     padding: 25px;
     border-radius: 12px;
     margin-bottom: 30px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
 .support-header h1 {
     font-size: 2rem;
-    color: #1f2937; 
+    color: #1f2937;
     margin-bottom: 20px;
 }
 
@@ -331,10 +335,20 @@ button {
 }
 
 .fund-progress {
-    background: #e0f2fe; /* light blue highlight */
+    background: #e0f2fe;
+    /* light blue highlight */
     padding: 15px;
     border-radius: 10px;
     margin-top: 20px;
     font-weight: 500;
     font-size: 0.95rem;
+}
+
+.proof-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    margin: 20px auto;
 }
